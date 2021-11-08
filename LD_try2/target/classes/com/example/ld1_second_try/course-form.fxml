@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ld1_second_try.fxControllers.CourseForm">
+   <children>
+      <TextField fx:id="courseNamePopulated" layoutX="127.0" layoutY="59.0" />
+      <TextField fx:id="idForCoursePopulated" layoutX="127.0" layoutY="102.0" />
+      <TextField layoutX="127.0" layoutY="148.0" />
+      <Label layoutX="39.0" layoutY="63.0" text="Course name" />
+      <Label layoutX="47.0" layoutY="106.0" text="Your ID" />
+      <Label layoutX="66.0" layoutY="152.0" text="Password" />
+      <Button layoutX="224.0" layoutY="217.0" mnemonicParsing="false" onAction="#createCourseFromForm" text="Create course" />
+      <Button layoutX="101.0" layoutY="217.0" mnemonicParsing="false" onAction="#returnFromCourseToMain" text="Cancel" />
+   </children>
+</AnchorPane>

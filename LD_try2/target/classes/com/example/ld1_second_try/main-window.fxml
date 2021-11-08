@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ld1_second_try.fxControllers.MainWindow">
+   <children>
+      <TreeView fx:id="courseFolderTree" layoutX="316.0" layoutY="59.0" prefHeight="220.0" prefWidth="231.0" />
+      <ListView fx:id="courseList" layoutX="32.0" layoutY="59.0" onMouseClicked="#populateFolders" prefHeight="220.0" prefWidth="210.0" />
+      <MenuBar layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="568.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Courses">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Folders">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Files">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="User Info">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Button layoutX="152.0" layoutY="318.0" mnemonicParsing="false" onAction="#addingACourse" text="Add course" />
+      <Button layoutX="284.0" layoutY="318.0" mnemonicParsing="false" onAction="#creatingFolderInCourseFromMain" text="Create folder in Course" />
+      <Button layoutX="495.0" layoutY="318.0" mnemonicParsing="false" onAction="#addFile" text="Add files" />
+   </children>
+</AnchorPane>
